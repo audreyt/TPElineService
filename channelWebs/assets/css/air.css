@@ -1,0 +1,205 @@
+html,
+body {
+    height: 100%;
+    text-align: center;
+    font-family: "Microsoft JhengHei";
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
+    font-family: inherit;
+}
+
+span {
+    font-size: 18px;
+    font-family: inherit;
+}
+
+#wrapper {
+    background-image: url('../images/bg01.png');
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100% 100%;
+    min-height: 100%;
+    padding-top: 0;
+    margin: 0;
+}
+
+button {
+    color: rgba(54, 44, 44, 0.71);
+}
+
+.gts {
+    background-color: #80c9ff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: inherit;
+}
+
+.areaBtn {
+    background-image: url('../images/area_before.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    width: 110px;
+    height: 60px;
+    margin: 5px 5px;
+}
+
+.areaBtn:active,
+.areaBtn:focus {
+    background-image: url('../images/area_after.png');
+    position: relative;
+    left: 2px;
+    top: 4px;
+}
+
+.sbtn--want {
+    margin-top: 15px;
+    background-image: url('../images/sub_before.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 260px;
+    height: 60px;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.sbtn--want:active,
+.sbtn--want:focus {
+    background-image: url('../images/sub_after.png');
+    position: relative;
+    left: 2px;
+    top: 4px;
+}
+
+.sbtn--cancel {
+    margin-top: 15px;
+    background-image: url('../images/cancel_before.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 260px;
+    height: 60px;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.sbtn--cancel:active,
+.sbtn--cancel:focus {
+    background-image: url('../images/cancel_after.png');
+    position: relative;
+    left: 2px;
+    top: 4px;
+}
+
+.back {
+    background-image: url('../images/back_before.png');
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: inline-block;
+    min-width: 260px;
+    height: 60px;
+}
+
+.back:active,
+.back:focus {
+    background-image: url('../images/back_after.png');
+    position: relative;
+    left: 2px;
+    top: 4px;
+}
+
+#subc__desc {
+    font-family: inherit;
+    font-weight: 520;
+    font-size: 20px;
+    background-color: #F6AD3A;
+}
+
+#subc__desc>p {
+    margin: 0px 0 10px 0;
+    padding: 0.67em 0 25px 0;
+    font-size: 28px;
+    font-family: inherit;
+}
+
+.subc__support {
+    color: #fff;
+    font-weight: 900;
+}
+
+table#subcedInfo {
+    margin: 0 auto;
+}
+
+table tr {
+    font-size: 22px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    background-color: #f8daad;
+}
+
+.modal__close {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    color: #b49e7d;
+    float: right;
+}
+
+#time__block {
+    margin: 0 20px;
+}
+
+.isChecked {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #98D1D9;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-size: 28px;
+    line-height: 28px;
+    margin: 5px auto;
+}
+
+.aircheck {
+    display: none;
+}
+
+.aircheck:checked+ .isChecked {
+    background-color: #98D1D9;
+}
