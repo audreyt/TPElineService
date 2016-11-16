@@ -1,10 +1,16 @@
+-- --------------------------------------------------------
+-- 主機:                           127.0.0.1
+-- 服務器版本:                        10.1.13-MariaDB - mariadb.org binary distribution
+-- 服務器操作系統:                      Win32
+-- HeidiSQL 版本:                  9.3.0.4984
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- 導出 yourdbname 的資料庫結構
-DROP DATABASE IF EXISTS `yourdbname`;
 CREATE DATABASE IF NOT EXISTS `yourdbname` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
 USE `yourdbname`;
 
@@ -31,6 +37,18 @@ CREATE TABLE IF NOT EXISTS `dataset_to_push` (
   `created_at` datetime NOT NULL,
   `changed_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT COMMENT='rawdata from crawler';
+
+-- 資料導出被取消選擇。
+
+
+-- 導出  表 yourdbname.line_service_token 結構
+DROP TABLE IF EXISTS `line_service_token`;
+CREATE TABLE IF NOT EXISTS `line_service_token` (
+  `access_token` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `refresh_token` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` datetime NOT NULL,
+  `expired` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- 資料導出被取消選擇。
 

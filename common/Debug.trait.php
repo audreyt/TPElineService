@@ -13,7 +13,7 @@ trait TDebugLog
     {
         $this->path = $path;
         $this->data = var_export($data, true);
-        $this->prefix = PHP_EOL . '========[' . date('Y-m-d h:i:s') . ']========' . PHP_EOL;
+        $this->prefix = PHP_EOL . '========[' . date('Y-m-d H:i:s') . ']========' . PHP_EOL;
         $this->suffix = PHP_EOL . '========================' . PHP_EOL;
     }
     public function saveDebugInfo()
