@@ -1,5 +1,4 @@
-Apache HTTP Server
-Copyright 2016 The Apache Software Foundation.
+TPE LINE Service
+This service includes library developed by LINE(https://line.me).
 
-This product includes software developed at
-The Apache Software Foundation (http://www.apache.org/).
+Portion of this service includes library developed by the MobileDetect(http://mobiledetect.net/) team.
